@@ -1,0 +1,27 @@
+.aside {
+    padding: 22px 0;
+}
+
+.aside__list {
+    display: flex;
+    gap: 8px;
+}
+
+.aside__item {
+    font-size: 12px;
+    color: #6d6d6d;
+    
+    &.aside__item:last-child {
+        color: #cdcbcb ;
+    } 
+}
+
+.aside__arr {
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #cdcbcb ;
+    border-right: 1px solid #cdcbcb ;
+    transform: rotate(45deg);
+    display: inline-block;
+    transition: 1s;
+}

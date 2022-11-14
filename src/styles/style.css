@@ -1,0 +1,499 @@
+@charset "UTF-8";
+@import '~normalize.css';
+@font-face {
+  src: url(../assets/fonts/Gilroy-Regular.ttf) format("truetype");
+  font-family: "Gilroy";
+  font-weight: 400;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Gilroy";
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header {
+  background: #ededed;
+  border-bottom: 1px solid #cccccc;
+}
+
+.haeder__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-menu__item__link {
+  font-size: 15px;
+  font-family: Arial;
+  color: black;
+  transition: 250ms;
+}
+.header-menu__item__link:hover {
+  color: #818181;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav__item {
+  border: none;
+  padding: 13px 10px;
+  font-size: 15px;
+  color: black;
+}
+.header-nav__item:hover, .header-nav__item:active {
+  background-color: #f8f8f8;
+  transition: 250ms;
+}
+
+.hero__wrapper {
+  display: flex;
+  padding: 25px 0;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__item:last-child {
+  margin-right: 50px;
+}
+
+.item__info {
+  display: flex;
+  gap: 14px;
+}
+
+.hero__logo {
+  width: 295px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000000;
+}
+
+.hero__list__item {
+  font-size: 15px;
+}
+
+.hero__list__item:nth-child(2) {
+  font-weight: 600;
+}
+
+.hero__png__location {
+  width: 17px;
+  height: 26px;
+}
+
+.hero__tel {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hero__tel__inner {
+  font-weight: 700;
+}
+
+.call__back {
+  padding: 10px 12px;
+  border: none;
+  background-color: #ffec00;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.catalog {
+  border-top: 2px solid #ececec;
+  border-bottom: 2px solid #ececec;
+}
+
+.catalog__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog__button {
+  padding: 18px 22px;
+  background-color: #ededed;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.catalog__inner-box {
+  display: flex;
+}
+
+.serch {
+  width: 400px;
+  height: 30px;
+  border: 2px solid #b5b4b4;
+  color: black;
+  background-image: url(./../../assets/images/search.png) 14px 15px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.serch::-moz-placeholder {
+  font-family: "Gilroy";
+  font-size: 15px;
+  color: #d5d5d5;
+  padding-left: 10px;
+}
+.serch:-ms-input-placeholder {
+  font-family: "Gilroy";
+  font-size: 15px;
+  color: #d5d5d5;
+  padding-left: 10px;
+}
+.serch::placeholder {
+  font-family: "Gilroy";
+  font-size: 15px;
+  color: #d5d5d5;
+  padding-left: 10px;
+}
+
+.serch:active {
+  border: 2px solid #000000;
+}
+
+.catalog__inner__card:last-child {
+  margin-right: 17px;
+}
+
+.catalog__inner {
+  display: flex;
+  gap: 20px;
+}
+
+.catalog__inner__card {
+  display: flex;
+}
+
+.round {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #ececec;
+  font-size: 12px;
+}
+
+.active {
+  background-color: #ffec00;
+}
+
+.round__number {
+  position: relative;
+  top: 2px;
+}
+
+.aside {
+  padding: 22px 0;
+}
+
+.aside__list {
+  display: flex;
+  gap: 8px;
+}
+
+.aside__item {
+  font-size: 12px;
+  color: #6d6d6d;
+}
+.aside__item.aside__item:last-child {
+  color: #cdcbcb;
+}
+
+.aside__arr {
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #cdcbcb;
+  border-right: 1px solid #cdcbcb;
+  transform: rotate(45deg);
+  display: inline-block;
+  transition: 1s;
+}
+
+.advertising {
+  background-image: url(../assets/images/advertising-bg.png);
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+
+.advertising__tittle {
+  font-size: 40px;
+  color: black;
+  font-weight: 800;
+  text-align: start;
+}
+
+.advertising__text {
+  text-align: start;
+  font-size: 12px;
+  color: black;
+}
+
+.content {
+  padding: 30px 0;
+}
+
+.content__wrapper {
+  display: grid;
+  grid-template-columns: 8% 44% 44%;
+  grid-gap: 20px;
+}
+
+.content-item__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ececec;
+  cursor: pointer;
+}
+
+.content__card:hover {
+  border: 2px solid #faeb37;
+  transition: 250ms;
+}
+
+.cotent__big {
+  position: relative;
+  border: 2px solid #ececec;
+}
+
+.increase {
+  cursor: pointer;
+  padding: 17px;
+  border-radius: 50%;
+  border: 2px solid #ececec;
+  margin-left: 90%;
+  margin-top: 1%;
+  background-position: center;
+  position: absolute;
+  background-image: url(../assets/images/search-plus.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 19px;
+}
+
+.content-item__header {
+  border-bottom: 2px solid #ececec;
+  padding-bottom: 25px;
+}
+
+.content-item__card__inner {
+  display: flex;
+  gap: 5px;
+}
+
+.card__black {
+  background-image: url(../assets/images/svg/black.svg);
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.card__yellow {
+  background-image: url(../assets/images/svg/yellow.svg);
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 50px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.content-item__stars {
+  padding: 25px;
+  border-bottom: 2px solid #ececec;
+}
+
+.content-item__stars__card {
+  display: flex;
+}
+
+.content-item__stars__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.star {
+  background-image: url(../assets/images/yellow-star.png);
+  width: 18px;
+  height: 17px;
+}
+
+.star:not(:last-child) {
+  margin-right: 4px;
+}
+
+.star-white {
+  background-image: url(../assets/images/white-star.png);
+  width: 18px;
+  height: 17px;
+}
+
+.amount {
+  font-size: 12px;
+  color: #cacaca;
+  margin-left: 10px;
+}
+
+.content-item__stars__box {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.card__img {
+  width: 22px;
+  height: 22px;
+}
+
+.card__review {
+  border-bottom: dashed;
+}/*# sourceMappingURL=style.css.map */

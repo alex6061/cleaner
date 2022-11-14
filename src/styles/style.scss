@@ -1,0 +1,34 @@
+@import '~normalize.css';
+
+// FONTS
+@import './components/fonts';
+
+// VARIABLES
+@import 'components/variebles';
+
+// INITIAL
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+// FILES
+
+@import 'components/res';
+@import 'components/container';
+
+
+
+
+@import 'components/header';
+@import 'components/hero';
+@import 'components/catalog';
+@import 'components/aside';
+@import 'components/advertising';
+@import 'components/content';
+
+
+
+
