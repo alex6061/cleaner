@@ -7,7 +7,15 @@
     display: flex;
     align-items: center ;
     justify-content: space-between;
+
+    @media screen and (max-width: 1045px) {
+        flex-direction: column-reverse;
+        padding: 10px 0;
+        gap: 10px;
+    }
 }
+
+
 
 .catalog__button {
     padding: 18px 22px;
@@ -40,6 +48,12 @@
         color: #d5d5d5;
         padding-left: 10px;
     }
+    @media screen and (max-width: 1178px) {
+        width: 250px;
+    }
+
+  
+
 }
 
 .serch:active {
@@ -61,6 +75,10 @@
 
 .catalog__inner__card {
     display: flex;
+    @media screen and (max-width:450px) {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
 
 .round {
@@ -69,6 +87,7 @@
     border-radius: 50%;
     background-color: #ececec;
     font-size: 12px;
+    
 }
 
 .active {

@@ -1,0 +1,17 @@
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero__logo {
+    width: 295px;
+    height: 50px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1045px) {
+        width: 196px;
+        height: 33px;
+    }
+}

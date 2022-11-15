@@ -5,6 +5,7 @@
 .aside__list {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .aside__item {

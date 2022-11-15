@@ -7,17 +7,24 @@
 .haeder__wrapper {
     display: flex;
     justify-content: space-between;
-    // padding: 13px 0;
+    align-items: center;
+   
 }
 
 .header-menu {
     display: flex;
     align-items: center;
+    @media screen and (max-width:970px) {
+        display: none;
+    }
 }
 
 .header-menu__item:not(:last-child) {
         margin-right: 20px;
-       
+        @media screen and (max-width:768px) {
+            margin-right: 10px;
+        }
+    
 }
 
 .header-menu__item__link {

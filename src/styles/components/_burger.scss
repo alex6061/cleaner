@@ -1,0 +1,37 @@
+.header__burger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+
+    @media screen and (min-width:970px) {
+        display: none;
+    }
+}
+
+.header__burger::before, .header__burger::after {
+    content: ' ';
+    background-color: #6c6c6c;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+
+
+.header__burger:before {
+    top: 0;
+}
+
+.header__burger:after {
+    bottom: 0;
+}
+
+.header__burger__span {
+    background-color: #6c6c6c;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 12px;
+}

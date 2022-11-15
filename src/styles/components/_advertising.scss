@@ -12,6 +12,9 @@
     color: black;
     font-weight: 800;
     text-align: start;
+    @media screen and (max-width:768px) {
+        font-size: 30px;
+    }
 }
 
 .advertising__text {
