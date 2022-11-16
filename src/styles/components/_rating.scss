@@ -9,7 +9,7 @@
 
 .content__raiting__item::before {
     content: " ";
-    background-image: url(../assets/images/yellow-star.png) center/auto 100% no-repeat;;
+    background-image: url(../../assets/images/yellow-star.png) center/auto 100% no-repeat;;
     background-repeat: repeat-x;
 
     display: block;
@@ -43,7 +43,7 @@
     height: 100%;
     cursor: pointer;
     color: black;
-    background-image: url(../assets/images/white-star.png);
+    background-image: url(../../assets/images/white-star.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@
 
 .content__raiting__label::before {
     content: "";
-    background: url(../assets/images/white-star.png) ;
+    background: url(../../assets/images/white-star.png) ;
     background-repeat: no-repeat;
     background-position: center;
     width: 18px;
@@ -63,7 +63,7 @@
 
 .content__raiting__item:checked,
 .content__raiting__item:checked ~ .content__raiting__label {
-    background-image: url(../assets/images/yellow-star.png) ;
+    background-image: url(../../assets/images/yellow-star.png) ;
     width: 18px;
     height: 17px;
     background-position: center;
@@ -74,7 +74,7 @@
 .content__raiting__label:hover ~ .content__raiting__label,
 .content__raiting__label:checked ~ .content__raiting__label:hover{
     
-    background-image: url(../assets/images/yellow-star.png) ;
+    background-image: url(../../assets/images/yellow-star.png) ;
     width: 18px;
     height: 17px;
     background-position: center;
