@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./src/styles/style.css">
 
+
   </head>
 
   <body>
@@ -48,7 +49,7 @@
             <button class="header-nav__item">Войти</button>
           </nav>
 
-          <div class="header__burger ">
+          <div class="header__burger">
               <span class="header__burger__span"></span>
           </div>
 
@@ -138,7 +139,7 @@
                 </div>
                 <div class="catalog__inner__card">
                   <img class="card-img" src="./src/assets/images/basket.png" alt="basket" width="24px" height="21px">
-                  <div class="round active">
+                  <div class="round yellow">
                     <span class="round__number">2</span> 
                   </div>
                 </div>
@@ -185,15 +186,15 @@
 
               <div class="content__cards">
                 <div class="content__card">
-                  <img src="./src/assets/images/pict_1.jpg" alt="vacuumСleaner" class="content__card__img">
+                  <img onClick="imgsrc();" id="first__img" src="./src/assets/images/pict_1.jpg" alt="vacuumСleaner" class="content__card__img">
                 </div>
                 <div class="content__card">
-                  <img src="./src/assets/images/pict_2.jpg" alt="vacuumСleaner" class="content__card__img">
+                  <img onClick="imgsrc();" id="second__img" src="./src/assets/images/pict_2.jpg" alt="vacuumСleaner" class="content__card__img">
                 </div>
-                <div class="content__card">
+                <div onClick="imgsrc();" id="third__img" class="content__card">
                   <img src="./src/assets/images/pict_3.jpg" alt="vacuumСleaner" class="content__card__img">
                 </div>
-                <div class="content__card">
+                <div onClick="imgsrc();" id="forth__img" class="content__card">
                   <img src="./src/assets/images/pict_4.jpg" alt="vacuumСleaner" class="content__card__img">
                 </div>
               </div>
@@ -213,9 +214,10 @@
 
                 <div class="content-item__card">
                   <div class="content-item__box">
-                    <p class="content-item__text">
-                      <span class="content-item__round"></span> В наличии
-                    </p>
+                    <div class="content-item__in-stock">
+                      <div class="content-item__round"></div>
+                      <div class="content-item__in-stock__text">В наличии</div>
+                    </div>
                     <p class="content-item__text">Karcher DS 6.000 Mediclean</p>
                   </div>
                 
@@ -231,13 +233,13 @@
                 </div> 
 
               </div>
-              
+
                 <!-- ============stars============ -->
 
               <div class="content-item__stars">
 
                 <div class="content-item__stars__wrapper">
-
+<!-- 
                     <div class="content-item__stars__card">
                       <div class="content-item__stars__star"></div>
                       <div class="content-item__stars__star"></div>
@@ -245,7 +247,56 @@
                       <div class="content-item__stars__star"></div>
                       <div class="content-item__stars__star-white"></div>
                       <div class="amount">(123)</div>
+                    </div> -->
+
+                    <div class="content-item__stars__card">
+
+ 
+                      <div class="content__raiting">
+                        <div class="content__raiting__items">
+                          <input id="content__raiting__5" class="content__raiting__item" type="radio" name="simple-rating" value="5">
+                          <label class="content__raiting__label" for="content__raiting__5"></label>
+                          
+                          <input id="content__raiting__4" class="content__raiting__item" checked type="radio" name="simple-rating" value="4">
+                          <label class="content__raiting__label" for="content__raiting__4"></label>
+                          
+                          <input id="content__raiting__3" class="content__raiting__item" type="radio" name="simple-rating" value="3">
+                          <label class="content__raiting__label" for="content__raiting__3"></label>
+                          
+                          <input id="content__raiting__2" class="content__raiting__item" type="radio" name="simple-rating" value="2">
+                          <label class="content__raiting__label" for="content__raiting__2"></label>
+                          
+                          <input id="content__raiting__1" class="content__raiting__item" type="radio" name="simple-rating" value="1">
+                          <label class="content__raiting__label" for="content__raiting__1"></label>
+                        </div>
+                      </div>
+
                     </div>
+                   
+
+                    <!-- <div class="content__raiting">
+
+                      <div class="content__raiting__items">
+                        <input id="content__raiting__5" class="content__raiting__item" type="radio" name="simple-rating" value="5">
+                        <label class="content__raiting__item__label" for="content__raiting"></label>
+  
+                        <input id="content__raiting__4" class="content__raiting__item" type="radio" name="simple-rating" value="4">
+                        <label class="content__raiting__item__label__4" for="content__raiting"></label>
+  
+                        <input id="content__raiting__3" class="content__raiting__item" type="radio" name="simple-rating" value="3">
+                        <label class="content__raiting__item__label__3" for="content__raiting"></label>
+  
+                        <input id="content__raiting__2" class="content__raiting__item" type="radio" name="simple-rating" value="2">
+                        <label class="content__raiting__item__label__2" for="content__raiting"></label>
+  
+                        <input id="content__raiting__1" class="content__raiting__item" type="radio" name="simple-rating" value="1">
+                        <label class="content__raiting__item__label__1" for="content__raiting"></label>
+                      </div>
+                      
+                    </div> -->
+
+                
+
 
                     <div class="content-item__stars__card">
                       <div class="content-item__stars__box">
@@ -323,6 +374,12 @@
         </div>
       </section>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="./script.js"></script>
+
 
   </body>
 </html>

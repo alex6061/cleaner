@@ -13,11 +13,24 @@
 
 .header-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     @media screen and (max-width:970px) {
-        display: none;
+
+        .header-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+       }
+
+        .header-menu__item__link {
+            font-size: 25px;
+        }
+        
     }
+   
 }
+
+
 
 .header-menu__item:not(:last-child) {
         margin-right: 20px;
@@ -32,6 +45,8 @@
     font-family: Arial;
     color: black;
     transition: 250ms;
+    font-weight: 500;
+
     &:hover {
         color: #818181;
     }
@@ -45,12 +60,18 @@
     border: none;
     padding: 13px 10px;
     font-size: 15px;
+    font-weight: 500;
     color: black;
+    cursor: pointer;
+
 
     &:hover, &:active {
         background-color: #f8f8f8;
-        transition: 250ms;
+        font-weight: 500;
+        transition: 110ms;
+        color: #818181;
     }
+    
 }
 
 

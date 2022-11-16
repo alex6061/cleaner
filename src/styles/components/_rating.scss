@@ -1,0 +1,86 @@
+
+.content__raiting {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+
+.content__raiting__item::before {
+    content: " ";
+    background-image: url(../assets/images/yellow-star.png) center/auto 100% no-repeat;;
+    background-repeat: repeat-x;
+
+    display: block;
+    background-position: center;
+    width: 18px;
+    height: 17px;
+}
+
+
+.content__raiting__items {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+
+}
+
+.content__raiting__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+
+.content__raiting__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: black;
+    background-image: url(../assets/images/white-star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.content__raiting__label::before {
+    content: "";
+    background: url(../assets/images/white-star.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 17px;
+
+    display: block;
+    transition: color 0.2s ease 0s;
+}
+
+.content__raiting__item:checked,
+.content__raiting__item:checked ~ .content__raiting__label {
+    background-image: url(../assets/images/yellow-star.png) ;
+    width: 18px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content__raiting__label:hover,
+.content__raiting__label:hover ~ .content__raiting__label,
+.content__raiting__label:checked ~ .content__raiting__label:hover{
+    
+    background-image: url(../assets/images/yellow-star.png) ;
+    width: 18px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+
