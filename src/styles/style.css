@@ -136,6 +136,7 @@ body {
     transition: 250ms;
   }
   .header-menu.active {
+    overflow: hidden;
     top: 0;
     transition: 250ms;
   }
@@ -811,7 +812,7 @@ body {
 }
 
 .content-item__stars {
-  padding: 25px;
+  padding: 25px 0;
   border-bottom: 2px solid #ececec;
 }
 
@@ -875,7 +876,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 1485px) {
   .content-item__main__header {
     flex-wrap: wrap;
     gap: 10px;

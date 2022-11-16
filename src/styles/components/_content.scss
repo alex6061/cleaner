@@ -211,7 +211,7 @@
 //=============stars=========
 
 .content-item__stars {
-    padding: 25px;
+    padding: 25px 0;
     border-bottom: 2px solid $grey-color;
 }
 
@@ -277,7 +277,7 @@
     align-items: center;
     justify-content: space-between;
     
-    @media screen and (max-width: 645px) {
+    @media screen and (max-width: 1485px) {
         flex-wrap: wrap;
         gap: 10px;
     }
