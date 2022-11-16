@@ -654,6 +654,11 @@ body {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 12px;
   color: #6e6e6e;
+  text-align: start;
+}
+
+.content-item__text {
+  text-align: start;
 }
 
 .content-item__round {
