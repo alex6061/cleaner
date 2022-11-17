@@ -236,29 +236,6 @@
     }
 }
 
-.content-item__stars__star {
-    cursor: pointer;
-    background-image: url(../assets/images/yellow-star.png);
-    width: 18px;
-    height: 17px;
-
-}
-
-.star:not(:last-child) {
-    margin-right: 4px;
-}
-
-.content-item__stars__star-white{
-    background-image: url(../assets/images/white-star.png);
-    width: 18px;
-    height: 17px;
-}
-
-.amount {
-    font-size: 12px;
-    color: #cacaca;
-    margin-left: 10px;
-}
 
 .content-item__stars__box {
     display: flex;
