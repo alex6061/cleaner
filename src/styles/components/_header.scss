@@ -4,6 +4,13 @@
     border-bottom: 1px solid #cccccc;
 }
 
+.header__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .haeder__wrapper {
     display: flex;
     justify-content: space-between;

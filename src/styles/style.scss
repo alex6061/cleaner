@@ -1,4 +1,4 @@
-@import '~normalize.css';
+@import './normalize.css';
 
 // FONTS
 @import './components/fonts';
@@ -24,6 +24,14 @@
 @import 'components/burger';
 //rating
 @import 'components/rating';
+
+
+@import 'components/catalog_list';
+
+@import 'components/menu';
+
+
+
 
 
 

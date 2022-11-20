@@ -121,7 +121,29 @@
 
           <div class="catalog__wrapper">
 
-            <button class="catalog__button">каталог +</button>
+            <div class="catalog__inner">
+              <p class="catalog__inner__title">Каталог</p>
+              <ul class="catalog__list ">
+                <li class="catalog__item">
+                  <a href="" class="catalog__link">Главная</a>
+                </li>
+                <li class="catalog__item">
+                  <a href="" class="catalog__link">Home & Garden</a>
+                </li>
+                <li class="catalog__item">
+                  <a href="" class="catalog__link">Бытовые пылесосы </a>
+                </li>
+                <li class="catalog__item">
+                  <a href="" class="catalog__link">Пылесос с водяным фильтром</a>
+                </li>
+                <li class="catalog__item">
+                  <a href="" class="catalog__link">Высочайшая сила всасывания и много</a>
+                </li>
+            </ul>
+            </div>
+
+            
+
             <input type="text" class="serch" placeholder="Что ищём?">
 
             <div class="catalog__inner">
@@ -204,7 +226,9 @@
             <div class="content-item">
               <div class="cotent__big">
                 <div class="increase"></div>
-                <img src="./src/assets/images/pict_5.jpg" alt="vacuumСleaner" class="cotent__big__img">  
+                <picture>
+                  <img onclick="open_photo ()" src="./src/assets/images/pict_5.jpg" alt="vacuumСleaner" class="cotent__big__img">  
+                </picture>
               </div>
             </div>
 
@@ -351,6 +375,11 @@
 
     <script type="text/javascript" src="./script.js"></script>
 
+    <script src="catalog.js"></script>
+
+
+
+  
 
   </body>
 </html>

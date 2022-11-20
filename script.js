@@ -7,6 +7,13 @@ $ (document).ready (function() {
 })
 
 
+$(document).ready (function() {
+    $('.catalog__inner').click (function (event) {
+        $('.catalog__list').ready
+    })
+})
+
+
 
 
 
@@ -35,6 +42,39 @@ $ (document).ready (function() {
 //     })
 //   });
 
+
+
+
+window.onscroll = () =>  {
+    const header = document.querySelector ('.header');
+    // console.log(window.scrollY);
+
+    const Y = window.scrollY
+
+    if( Y > 2) {
+        // header = classList.add('header__fixed')
+        header.classList.add('header__fixed');
+        // console.log(window.scrollY)
+    }   else if (Y < 1) {
+        header.classList.remove('header__fixed');
+
+    }
+}
+
+
+
+
+
+// function open_photo(photo) {
+//     document.getElementById("cotent__big__img").innerHTML =
+//       ("<img onclick='close_photo()' style='position: absolute;' src='" + photo + "'>")
+//   }
+  
+  
+  
+//   function close_photo() {
+//     document.getElementById("cotent__big__img").innerHTML = ""
+//   }
 
 
 
